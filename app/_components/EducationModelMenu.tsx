@@ -26,7 +26,7 @@ export const EducationModelMenu = ({
                 whereClause !== "main"
                   ? "hover:text-primaryRed"
                   : "hover:text-white"
-              } transition-colors`
+              } transition-colors hover:bg-inherit`
             )}
           >
             Education Model

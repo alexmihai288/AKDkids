@@ -22,7 +22,7 @@ export const BranchesMenu = ({ whereClause }: { whereClause?: string }) => {
                 whereClause !== "main"
                   ? "hover:text-primaryRed"
                   : "hover:text-white"
-              } transition-colors`
+              } transition-colors hover:bg-inherit`
             )}
           >
             Branches
