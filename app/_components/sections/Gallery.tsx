@@ -39,16 +39,6 @@ export const Gallery = () => {
                   key={galleryImage.imageUrl}
                 />
               ))}
-              <Link
-                target="_blank"
-                href="https://www.instagram.com/afyonkarahisarakdkids/"
-                className={cn(
-                  buttonVariants({ variant: "default" }),
-                  "bg-primaryRed hover:bg-[#96030c]"
-                )}
-              >
-                View more
-              </Link>
             </div>
           </ScrollArea>
         </Container>

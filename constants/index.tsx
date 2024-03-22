@@ -181,36 +181,39 @@ export const EducationModelnfo = [
 
 export const GalleryImages = [
   {
-    imageUrl: "https://utfs.io/f/23dc4045-d00a-4890-aef1-d3cd8e32b975-2i2.jpg",
+    imageUrl: "https://utfs.io/f/a76e603a-3f97-4eff-9bef-b679258791e1-2i2.jpg",
   },
   {
-    imageUrl: "https://utfs.io/f/ef55b659-95b8-4912-8c16-6813fe24aec7-2i3.jpg",
+    imageUrl: "https://utfs.io/f/e24a554b-6c30-431b-b4f6-689f0a1568f6-2i3.jpg",
   },
   {
-    imageUrl: "https://utfs.io/f/d47bd248-efa6-4164-b02c-8b1df824b716-2i6.jpg",
+    imageUrl: "https://utfs.io/f/5f8504ef-8eee-42ff-b460-2ad2d9683ce0-2i4.jpg",
   },
   {
     imageUrl: "https://utfs.io/f/028ccfa9-e5a5-4936-b0e1-c3a6539c2084-2i4.jpg",
   },
   {
-    imageUrl: "/gallery/g4.jpg",
+    imageUrl: "https://utfs.io/f/da38ad96-f979-48c3-bc5d-986e686bbf86-2i5.jpg",
   },
   {
-    imageUrl: "/gallery/g6.jpg",
+    imageUrl: "https://utfs.io/f/aeae28b6-89da-4340-94c1-1522d55546dc-2i7.jpg",
   },
   {
-    imageUrl: "/gallery/g7.jpg",
+    imageUrl: "https://utfs.io/f/7fd5edf1-8ae4-47d9-a3c6-c10b26eee1ff-2i8.jpg",
   },
   {
-    imageUrl: "/gallery/g8.jpg",
+    imageUrl: "https://utfs.io/f/c27eb4bd-e287-4684-9546-c3d50085d12d-2i9.jpg",
   },
   {
-    imageUrl: "/gallery/g9.jpg",
+    imageUrl: "https://utfs.io/f/a4795fb1-c6b6-4ed5-bb44-790de9e901b6-2ia.jpg",
   },
   {
-    imageUrl: "/gallery/g10.jpg",
+    imageUrl: "https://utfs.io/f/6f1c9920-a12a-4e66-bce1-535825b862d7-25l2.jpg",
   },
   {
-    imageUrl: "/gallery/g11.jpg",
+    imageUrl: "https://utfs.io/f/3b52fc92-bdfd-4f32-82d6-fb47fd42b515-25l3.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/203c8d0c-c452-433b-a87c-4d453f3ce4b3-25l4.jpg",
   },
 ] as GalleryImagesType[];
