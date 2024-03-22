@@ -190,9 +190,6 @@ export const GalleryImages = [
     imageUrl: "https://utfs.io/f/5f8504ef-8eee-42ff-b460-2ad2d9683ce0-2i4.jpg",
   },
   {
-    imageUrl: "https://utfs.io/f/028ccfa9-e5a5-4936-b0e1-c3a6539c2084-2i4.jpg",
-  },
-  {
     imageUrl: "https://utfs.io/f/da38ad96-f979-48c3-bc5d-986e686bbf86-2i5.jpg",
   },
   {
