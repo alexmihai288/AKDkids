@@ -9,6 +9,8 @@ import { Container } from "@/components/Container";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
+
+//
 export default function Home() {
   return (
     <main className="relative z-20">
