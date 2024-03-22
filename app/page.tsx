@@ -6,18 +6,19 @@ import { OurSchools } from "./_components/sections/OurSchools";
 import { Gallery } from "./_components/sections/Gallery";
 import { OurEvents } from "./_components/sections/OurEvents";
 import { Container } from "@/components/Container";
+import { unstable_noStore } from "next/cache";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
-
-//
 export default function Home() {
+  unstable_noStore();
   return (
     <main className="relative z-20">
       <video
-        src="/ad1.mp4"
+        src="/ad3.mp4"
         autoPlay
         loop
+        muted
         preload="auto"
         playsInline
         className="object-cover w-full h-full min-h-[90vh] md:h-[60vh] max-h-[100vh] brightness-75"
