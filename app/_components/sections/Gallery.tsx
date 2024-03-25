@@ -10,7 +10,13 @@ import React from "react";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
-export const Gallery = () => {
+interface GalleryProps {
+  name?: string;
+  color?: string;
+}
+
+export const Gallery = ({ name, color }: { name?: string; color?: string }) => {
+  console.log(color);
   return (
     <>
       <Container>
@@ -20,10 +26,10 @@ export const Gallery = () => {
             atma.className
           )}
         >
-          Gallery
+          {name} Gallery
         </p>
       </Container>
-      <div className="bg-[#f1e7ff] rounded-sm p-5 mt-10 ">
+      <div className={cn(`bg-[${color}] rounded-sm p-5 mt-10`)}>
         <Container>
           <ScrollArea className="h-[600px] px-5 pt-5">
             <div className="mt-6 grid grid-cols-1 items-center justify-center sm:grid-cols-2 md:grid-cols-4 gap-10">

@@ -61,7 +61,7 @@ export default function Home() {
       <Container>
         <OurEvents />
       </Container>
-      <Gallery />
+      <Gallery color="#f1e7ff" />
     </main>
   );
 }

@@ -83,7 +83,22 @@ const page = ({ params }: { params: { branchName: string } }) => {
           className="mx-auto hidden md:block"
         />
       </Container>
-      <Gallery />
+      <Gallery
+        name={
+          params.branchName === "1"
+            ? "Mareşal"
+            : params.branchName === "2"
+            ? "Uydukent"
+            : "Triovista"
+        }
+        color={
+          params.branchName === "1"
+            ? "#95c74d"
+            : params.branchName === "2"
+            ? "#2194d2"
+            : "#f1e7ff"
+        }
+      />
       <Container>
         <div className="mt-20 flex flex-col gap-20 lg:gap-0 lg:flex-row lg:justify-between">
           <div className="space-y-20 mx-auto lg:mx-0">

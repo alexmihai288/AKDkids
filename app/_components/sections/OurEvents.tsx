@@ -177,7 +177,7 @@ export const OurEvents = () => {
                   {" "}
                   The science activities consist of activities that support
                   exploration, curiosity, and scientific process skills,
-                  including physical science, mathematics,.
+                  including physical science, mathematics.
                 </p>
               </div>
             </div>
