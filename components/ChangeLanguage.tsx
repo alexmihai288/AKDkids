@@ -17,7 +17,9 @@ export const ChangeLanguage = () => {
           <div className="flex items-center gap-10">
             <div className="flex items-center gap-2.5">
               <FaPhoneAlt className="text-sm text-primaryRed self-start" />
-              <p>Phone number:</p>
+              <p>
+                {language === "english" ? "Phone number" : "Telefon numarası"}:
+              </p>
               <span>0850 80 80 453</span>
             </div>
             <div className="flex items-center gap-2.5">
@@ -39,7 +41,7 @@ export const ChangeLanguage = () => {
                 width={30}
                 height={30}
               />
-              <p>English</p>
+              <p>{language === "english" ? "English" : "İngilizce"}</p>
             </div>
             <div
               onClick={() => setLanguage("turkish")}
@@ -54,7 +56,7 @@ export const ChangeLanguage = () => {
                 width={30}
                 height={30}
               />
-              <p>Turkish</p>
+              <p>{language === "english" ? "Turkish" : "Türkçe"}</p>
             </div>
           </div>
         </div>
