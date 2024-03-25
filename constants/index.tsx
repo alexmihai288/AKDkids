@@ -292,8 +292,7 @@ export const EducationModels = [
     ),
     englishDescription:
       "We integrate family education into our holistic approach to child development. Monthly bulletins, in English and Turkish, curated by our experts, provide comprehensive programs, including music lessons, English vocabulary, and family activities, fostering a collaborative learning environment between home and school.",
-    turkishDescription:
-      "Aile eğitimini çocuk gelişimine yönelik bütünsel yaklaşımımıza entegre ediyoruz. Uzmanlarımız tarafından hazırlanan İngilizce ve Türkçe aylık bültenler, müzik dersleri, İngilizce kelime bilgisi ve aile etkinlikleri gibi kapsamlı programlar sunarak ev ve okul arasında işbirliğine dayalı bir öğrenme ortamını teşvik ediyor.",
+    turkishDescription:       "Aile eğitimini çocuk gelişimine yönelik bütünsel yaklaşımımıza entegre ediyoruz. Uzmanlarımız tarafından hazırlanan İngilizce ve Türkçe aylık bültenler, müzik dersleri, İngilizce kelime bilgisi ve aile etkinlikleri gibi kapsamlı programlar sunarak ev ve okul arasında işbirliğine dayalı bir öğrenme ortamını teşvik ediyor.",
   },
 ] as EducationModelsType[];
 
