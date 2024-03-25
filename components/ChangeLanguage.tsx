@@ -28,7 +28,10 @@ export const ChangeLanguage = () => {
           <div className="flex items-center gap-10">
             <div
               onClick={() => setLanguage("english")}
-              className="flex items-center gap-2.5"
+              className={cn(
+                "cursor-pointer flex items-center gap-2.5 border-2 border-[#f7f5f2] p-2 rounded-full ",
+                language === "english" && "border-primaryRed"
+              )}
             >
               <Image
                 src="/english-logo.png"
@@ -40,7 +43,10 @@ export const ChangeLanguage = () => {
             </div>
             <div
               onClick={() => setLanguage("turkish")}
-              className={cn("cursor-pointer flex items-center gap-2.5 border-2 border-primaryRed p-2 rounded-full")}
+              className={cn(
+                "cursor-pointer flex items-center gap-2.5 border-2 border-[#f7f5f2] p-2 rounded-full ",
+                language === "turkish" && "border-primaryRed"
+              )}
             >
               <Image
                 src="/turkey-logo.png"
@@ -48,7 +54,7 @@ export const ChangeLanguage = () => {
                 width={30}
                 height={30}
               />
-              <p>English</p>
+              <p>Turkish</p>
             </div>
           </div>
         </div>
