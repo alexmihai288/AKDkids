@@ -7,6 +7,7 @@ import { Gallery } from "./_components/sections/Gallery";
 import { OurEvents } from "./_components/sections/OurEvents";
 import { Container } from "@/components/Container";
 import { unstable_noStore } from "next/cache";
+import { ChangeLanguage } from "@/components/ChangeLanguage";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
@@ -23,7 +24,7 @@ export default function Home() {
         playsInline
         className="object-cover w-full h-full min-h-[90vh] md:h-[60vh] max-h-[100vh] brightness-75"
       ></video>
-      <div className="h-full min-h-[90vh] md:h-[60vh] max-h-[100vh]  absolute top-0 left-0 right-0 p-2 sm:px-5 sm:py-2.5 md:px-10 md:py-5">
+      <div className="h-full min-h-[90vh] md:h-[60vh] max-h-[100vh]  absolute top-0 left-0 right-0 p-2 sm:px-5 sm:py-2.5 md:px-10">
         <Container>
           <Navbar whereClause="main" />
         </Container>
