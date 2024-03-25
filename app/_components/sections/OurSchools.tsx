@@ -1,3 +1,4 @@
+import { TranslateText } from "@/components/TranslateText";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Atma } from "next/font/google";
@@ -16,7 +17,10 @@ export const OurSchools = () => {
           atma.className
         )}
       >
-        Our Schools In Afyon
+        <TranslateText
+          englishText="Our Schools In Afyon"
+          turkishText="Afyon'daki Okullarımız"
+        />
       </p>
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10 mt-10">
         {" "}
@@ -40,7 +44,10 @@ export const OurSchools = () => {
               "bg-[#23cc88] hover:bg-[#157f54] mt-10"
             )}
           >
-            View more{" "}
+            <TranslateText
+              englishText="View more"
+              turkishText="Daha fazla görüntüle"
+            />{" "}
           </Link>
         </div>
         <div className="p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 transition-transform">
@@ -63,7 +70,10 @@ export const OurSchools = () => {
               "bg-[#23cc88] hover:bg-[#157f54] mt-10"
             )}
           >
-            View more{" "}
+            <TranslateText
+              englishText="View more"
+              turkishText="Daha fazla görüntüle"
+            />{" "}
           </Link>
         </div>
         <div className="p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 transition-transform">
@@ -86,7 +96,10 @@ export const OurSchools = () => {
               "bg-[#23cc88] hover:bg-[#157f54] mt-10"
             )}
           >
-            View more{" "}
+            <TranslateText
+              englishText="View more"
+              turkishText="Daha fazla görüntüle"
+            />
           </Link>
         </div>
       </div>

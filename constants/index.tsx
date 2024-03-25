@@ -1,8 +1,13 @@
+import { useLanguage } from "@/hooks/use-language";
+
 export interface EducationModelsType {
   imageUrl: string;
-  title: string;
-  children: React.ReactNode;
-  description: string;
+  englishTitle: string;
+  turkishTitle: string;
+  englishChildren: React.ReactNode;
+  turkishChildren: React.ReactNode;
+  englishDescription: string;
+  turkishDescription: string;
 }
 
 export interface EducationModelType {
@@ -19,8 +24,9 @@ export const EducationModels = [
   {
     imageUrl:
       "https://utfs.io/f/a0394c4a-6b39-4093-84e5-e3bbfa21c6a5-705kdz.jpg",
-    title: "Authentic Education Model",
-    children: (
+    englishTitle: "Authentic Education Model",
+    turkishTitle: "Otantik Eğitim Modeli",
+    englishChildren: (
       <p>
         AKD Kids is a Markalar Birligi organization. Institutions affiliated
         with Markalar Birligi are the first and only pre-school education
@@ -29,14 +35,26 @@ export const EducationModels = [
         with Bilingual Education.
       </p>
     ),
-    description:
+    turkishChildren: (
+      <p>
+        AKD Kids bir Markalar Birliği kuruluşudur. Bağlı Kuruluşlar Markalar
+        Birliği ile Türkiye`&apos;`nin ilk ve tek okul öncesi eğitimi
+        Türkiye`&apos;`de Avrupa Dil Portfolyosunu kullanan kurumlar. Eklektik
+        bir yaklaşım benimseyerek, iç içe geçmiş benzersiz bir model sergileyen
+        İki Dilli Eğitim ile.
+      </p>
+    ),
+    englishDescription:
       "AKD Kids, as a Markalar Birligi institution, pioneers pre-school education in Turkey by implementing the European Language Portfolio. Our approach is eclectic, blending seamlessly with Bilingual Education to offer a distinctive and unparalleled educational model.",
+    turkishDescription:
+      "Bir Markalar Birliği kurumu olarak AKD Kids, Avrupa Dil Portföyünü uygulayarak Türkiye'de okul öncesi eğitime öncülük etmektedir. Yaklaşımımız eklektiktir, farklı ve benzersiz bir eğitim modeli sunmak için Çift Dilli Eğitim ile sorunsuz bir şekilde harmanlanır.",
   },
   {
     imageUrl:
       "https://utfs.io/f/4615aeda-944b-4cb2-baac-26336f438648-705kdy.jpg",
-    title: "Features Of Our Program",
-    children: (
+    englishTitle: "Features Of Our Program",
+    turkishTitle: "Programımızın Özellikleri",
+    englishChildren: (
       <p>
         Our AKD Kids authentic education program • Is child-based. • Connects
         nature and the child. • Views English as not a branch class but a part
@@ -57,14 +75,39 @@ export const EducationModels = [
         child.
       </p>
     ),
-    description:
+    turkishChildren: (
+      <p>
+        AKD Kids özgün eğitim programımız - Çocuk temellidir. - Bağlar doğa ve
+        çocuk. - İngilizceyi bir branş dersi olarak değil, bir parçası olarak
+        görür. çocuğun hayatının bir parçasıdır. - Bilimsel temellidir. -
+        Yaratıcılığı artırır Çocuklar. - Aşağıdakileri sağlayarak sosyal
+        becerilerin gelişimini destekler Büyük grup aktiviteleri ile sosyal
+        ortamlar. - Aileyi bir aile olarak görür. eğitimin bir parçasıdır. -
+        Bireysel farklılıklara ve ihtiyaçlara dayanır. - Özenle planlanmış bir
+        eğitim ile çocukların özgüvenlerini destekler. Sistem. - Kendine
+        güvenen, yaratıcı ve meraklı bireyler yetiştirmeyi hedefler. Bireyler. -
+        Her çocuğun kendi yeteneklerinin peşinden gitmesi için fırsat sağlar.
+        İlgi alanları. - Öğretmeni bir rehber olarak görür. - Saygı modeli ile,
+        Çocukta topluma ve evrene karşı saygı geliştirir. - Çocuğun bedenini,
+        zihnini ve ruhunu bir bütün olarak ilköğretime hazırlar okul dersleri ve
+        yaşam. AKD Çocuk Programı, okuldan geri kalmayan bir program sarmal,
+        ortaklık bilincine sahip bir eğitim yaratırken zamanın gerisinde
+        kalmıştır, ve çocukların &quot;geride bırakılmasını&quot; veya
+        &quot;itilmesini&quot; önler. ileri&quot; en başarılı öğrenme becerisine
+        odaklanarak Çocuk.
+      </p>
+    ),
+    englishDescription:
       "Our AKD Kids education program: Child-based, nature-connected, English as integral, science-based, fostering creativity, social skill development, family involvement, tailored to individual needs, promoting self-confidence, nurturing curiosity, guided learning, fostering respect, holistic preparation for school and life. AKD Kids Program ensures inclusive, forward-looking education, prioritizing each child's learning success.",
+    turkishDescription:
+      "AKD Kids eğitim programımız: Çocuk temelli, doğayla bağlantılı, İngilizceyi bütünleştiren, bilim temelli, yaratıcılığı teşvik eden, sosyal beceri gelişimi, aile katılımı, bireysel ihtiyaçlara göre uyarlanmış, özgüveni teşvik eden, merakı besleyen, rehberli öğrenme, saygıyı teşvik eden, okula ve hayata bütünsel hazırlık. AKD Çocuk Programı, her çocuğun öğrenme başarısına öncelik vererek kapsayıcı, ileriye dönük bir eğitim sağlar.",
   },
   {
     imageUrl:
       "https://utfs.io/f/50731d7b-3225-474a-b3bd-96018b9401d2-705kdx.jpg",
-    title: "Our Collaboration",
-    children: (
+    englishTitle: "Our Collaboration",
+    turkishTitle: "İşbirliğimiz",
+    englishChildren: (
       <p>
         In our AKD Kids institutions, English is included in the full-time
         education program. The program is specific to our institutions and is a
@@ -77,14 +120,30 @@ export const EducationModels = [
         meets European standards.
       </p>
     ),
-    description:
+    turkishChildren: (
+      <p>
+        {" "}
+        AKD Kids kurumlarımızda İngilizce tam zamanlı eğitim kapsamındadır.
+        eğitim programı. Program kurumlarımıza özeldir ve bir uzman kadromuz ile
+        hazırlanan yabancı dil eğitim programımız ana dili İngilizcedir.
+        Çocuklar İngilizceyi ana dil olarak öğrenirler, iletişim kurmak için
+        farklı bir dil konuşmaları gerektiğinin farkına varmaları
+        öğretmenleriyle birlikte. Bu doğrultuda tasarlanan çalışma kitaplarımız
+        Dil eğitimimizdeki yaş grupları, sadece bizim için tasarlanmıştır. ve
+        eğitim yaklaşımıyla oluşturulmuştur. Avrupa standartlarını karşılar.
+      </p>
+    ),
+    englishDescription:
       "At AKD Kids, English is integral to our full-time education program. Tailored to our institution, our foreign language curriculum, led by expert English-speaking staff, immerses children in English from a young age. Customized workbooks, aligned with age groups, meet European educational standards exclusively for our students.",
+    turkishDescription:
+      "AKD Kids'te İngilizce, tam zamanlı eğitim programımızın ayrılmaz bir parçasıdır. Kurumumuza özel olarak hazırlanan yabancı dil müfredatımız, İngilizce konuşan uzman personel tarafından yönetilmekte ve çocukları küçük yaşlardan itibaren İngilizceye alıştırmaktadır. Yaş gruplarına göre uyarlanmış özel çalışma kitapları, öğrencilerimiz için özel olarak Avrupa eğitim standartlarını karşılamaktadır.",
   },
   {
     imageUrl:
       "https://utfs.io/f/a0394c4a-6b39-4093-84e5-e3bbfa21c6a5-705kdz.jpg",
-    title: " Our Events",
-    children: (
+    englishTitle: " Our Events",
+    turkishTitle: "Etkinliklerimiz",
+    englishChildren: (
       <p>
         The European Language Portfolio (ELP), in essence, is a personal file
         where individuals can follow their language learning processes and
@@ -101,14 +160,34 @@ export const EducationModels = [
         and evaluation of the European Language Portfolio.
       </p>
     ),
-    description:
+    turkishChildren: (
+      <p>
+        Avrupa Dil Portföyü (ELP), özünde kişisel bir dosyadır bireylerin dil
+        öğrenme süreçlerini takip edebilecekleri ve kendilerini
+        değerlendirebilirler. ELP seçilen kişiler adına kayıtlıdır Avrupa
+        Konseyi`&apos;`nin onayı ile kurulmuştur. Aktif ELP kurumlarımızda
+        kullandığımız Avrupa Konseyi tarafından tescil edilmiştir. veritabanına
+        Amerikan Kültür adına 2012.R0006 numarası ile kaydedilmiştir. Amerikan
+        Kültür, Türkiye`&apos;`de portföyü olan tek kuruluştur Avrupa Konseyi
+        tarafından onaylanmıştır. Amerikan Kültürü bir kurumdur Avrupa Dil
+        Portföyü`&apos;`nün ilkelerini belirleyen kurslarında ve okul öncesi
+        eğitim kurumlarında 2004 yılından bu yana yabancı dil eğitimine entegre
+        edebilmiştir. Bu doğrultuda, öğretmenler çocuklarımıza başlangıç
+        sırasında ve sonrasında rehberlik etmektedir. ve Avrupa Dil
+        Portfolyosunun değerlendirilmesi.
+      </p>
+    ),
+    englishDescription:
       "The European Language Portfolio (ELP) serves as a personal language tracking tool, enabling individuals to monitor their language learning journey and self-assess. Registered under selected institutions with Council of Europe endorsement, our active ELP, registered as 2012.R0006, through American Culture, stands as Turkey's sole Council-approved portfolio. Since 2004, American Culture has embedded ELP principles into its language education, guiding students through portfolio initiation and evaluation.",
+    turkishDescription:
+      "Avrupa Dil Portfolyosu (ELP), bireylerin dil öğrenme yolculuklarını takip etmelerini ve kendi kendilerini değerlendirmelerini sağlayan kişisel bir dil izleme aracı olarak hizmet vermektedir. Seçilmiş Avrupa Konseyi onaylı kurumlarda kayıtlı olan ve 2012.R0006 numarasıyla Amerikan Kültür aracılığıyla aktif olan ELP, Türkiye'de Konsey onaylı tek portfolyodur. Amerikan Kültür, 2004 yılından bu yana ELP ilkelerini dil eğitimine dahil ederek öğrencilere portfolyo oluşturma ve değerlendirme konusunda rehberlik etmektedir.",
   },
   {
     imageUrl:
       "https://utfs.io/f/02a902b3-e486-4a27-b193-3bdbdf7108ed-705kdw.jpg",
-    title: "Our Foreign Language Education",
-    children: (
+    englishTitle: "Our Foreign Language Education",
+    turkishTitle: "Yabancı Dil Eğitimimiz",
+    englishChildren: (
       <p>
         The European Language Portfolio (ELP), in essence, is a personal file
         where individuals can follow their language learning processes and
@@ -125,14 +204,34 @@ export const EducationModels = [
         and evaluation of the European Language Portfolio.
       </p>
     ),
-    description:
+    turkishChildren: (
+      <p>
+        Yabancı Dil Eğitimimiz Avrupa Dil Portfolyosu (ELP), özünde kişisel bir
+        dosyadır bireylerin dil öğrenme süreçlerini takip edebilecekleri ve
+        kendilerini değerlendirebilirler. ELP seçilen kişiler adına kayıtlıdır
+        Avrupa Konseyi`&apos;`nin onayı ile kurulmuştur. Aktif ELP
+        kurumlarımızda kullandığımız Avrupa Konseyi tarafından tescil
+        edilmiştir. veritabanına Amerikan Kültür adına 2012.R0006 numarası ile
+        kaydedilmiştir. Amerikan Kültür, Türkiye`&apos;`de portföyü olan tek
+        kuruluştur Avrupa Konseyi tarafından onaylanmıştır. Amerikan Kültürü bir
+        kurumdur Avrupa Dil Portföyü`&apos;`nün ilkelerini belirleyen
+        kurslarında ve okul öncesi eğitim kurumlarında 2004 yılından bu yana
+        yabancı dil eğitimine entegre edebilmiştir. Bu doğrultuda, öğretmenler
+        çocuklarımıza başlangıç sırasında ve sonrasında rehberlik etmektedir. ve
+        Avrupa Dil Portfolyosunun değerlendirilmesi.
+      </p>
+    ),
+    englishDescription:
       "The European Language Portfolio (ELP) serves as a personal record for language learning and self-assessment. Registered under selected institutions with Council of Europe approval, our active ELP is listed in the European Council database (2012.R0006), endorsed by American Culture. As the sole Turkish organization with Council of Europe-approved portfolios, American Culture has embedded ELP principles in its curriculum since 2004, aiding teachers in guiding our children through ELP initiation and evaluation.",
+    turkishDescription:
+      "Avrupa Dil Portfolyosu (ELP), dil öğrenimi ve öz değerlendirme için kişisel bir kayıt görevi görür. Avrupa Konseyi onaylı seçilmiş kurumlar altında kayıtlı olan aktif ELP'miz, Amerikan Kültür tarafından onaylanan Avrupa Konseyi veritabanında (2012.R0006) listelenmiştir. Avrupa Konseyi onaylı portfolyolara sahip tek Türk kuruluşu olan Amerikan Kültür, 2004 yılından bu yana ELP ilkelerini müfredatına yerleştirmiş ve öğretmenlere ELP başlatma ve değerlendirme yoluyla çocuklarımıza rehberlik etmelerinde yardımcı olmuştur.",
   },
   {
     imageUrl:
       "https://utfs.io/f/266f07c3-2f8a-47be-8f79-5a4d49d85116-705kdv.jpg",
-    title: "European Language Portfolio",
-    children: (
+    englishTitle: "European Language Portfolio",
+    turkishTitle: "Avrupa Dil Portföyü",
+    englishChildren: (
       <p>
         We cannot think of children independent of family education on this path
         we proceed with the understanding that education as a whole. For this
@@ -144,14 +243,30 @@ export const EducationModels = [
         and child education recommendations.
       </p>
     ),
-    description:
+    turkishChildren: (
+      <p>
+        {" "}
+        Bu yolda çocukları aile eğitiminden bağımsız düşünemeyiz eğitimin bir
+        bütün olduğu anlayışıyla hareket ediyoruz. Bunun için Bu nedenle biri
+        İngilizce diğeri Türkçe olmak üzere iki bülten hazırlıyoruz,
+        uzmanlarımızla birlikte her ay velilerimiz için hazırlıyoruz. Bu
+        bültende çocuklar için aylık, haftalık ve günlük programlar, müzik
+        öğrenmek ve QR kodları, öğrendiğimiz İngilizce kelimeler, etkinlik
+        örnekleri Okulla paralel olarak aile ile yapılabilecekler ve aile ve
+        çocuk eğitimi önerileri.
+      </p>
+    ),
+    englishDescription:
       "We view children's education as inseparable from family involvement. Thus, we craft monthly bulletins in both English and Turkish, curated by our experts for parents. These bulletins feature comprehensive programs for children, including monthly, weekly, and daily activities, music lessons, QR codes, English vocabulary, family-oriented activities, and educational recommendations for both parents and children.",
+    turkishDescription:
+      "Çocuk eğitiminin aile katılımından ayrılamayacağını düşünüyoruz. Bu nedenle, uzmanlarımız tarafından ebeveynler için hazırlanan aylık bültenleri hem İngilizce hem de Türkçe olarak hazırlıyoruz. Bu bültenlerde aylık, haftalık ve günlük aktiviteler, müzik dersleri, QR kodlar, İngilizce kelime dağarcığı, aile odaklı aktiviteler ve hem ebeveynler hem de çocuklar için eğitim önerileri gibi çocuklara yönelik kapsamlı programlar yer alıyor.",
   },
   {
     imageUrl:
       "https://utfs.io/f/11f0f29e-8e6d-4c38-aa3a-cf3bcffed192-705kdu.jpg",
-    title: "Our Family Newsletter",
-    children: (
+    englishTitle: "Our Family Newsletter",
+    turkishTitle: "Aile Bültenimiz",
+    engllishChildren: (
       <p>
         We cannot think of children independent of family education on this path
         we proceed with the understanding that education as a whole. For this
@@ -163,8 +278,22 @@ export const EducationModels = [
         and child education recommendations.
       </p>
     ),
-    description:
+    turkishChildren: (
+      <p>
+        Bu yolda çocukları aile eğitiminden bağımsız düşünemeyiz eğitimin bir
+        bütün olduğu anlayışıyla hareket ediyoruz. Bunun için Bu nedenle biri
+        İngilizce diğeri Türkçe olmak üzere iki bülten hazırlıyoruz,
+        uzmanlarımızla birlikte her ay velilerimiz için hazırlıyoruz. Bu
+        bültende çocuklar için aylık, haftalık ve günlük programlar, müzik
+        öğrenmek ve QR kodları, öğrendiğimiz İngilizce kelimeler, etkinlik
+        örnekleri Okulla paralel olarak aile ile yapılabilecekler ve aile ve
+        çocuk eğitimi önerileri.
+      </p>
+    ),
+    englishDescription:
       "We integrate family education into our holistic approach to child development. Monthly bulletins, in English and Turkish, curated by our experts, provide comprehensive programs, including music lessons, English vocabulary, and family activities, fostering a collaborative learning environment between home and school.",
+    turkishDescription:
+      "Aile eğitimini çocuk gelişimine yönelik bütünsel yaklaşımımıza entegre ediyoruz. Uzmanlarımız tarafından hazırlanan İngilizce ve Türkçe aylık bültenler, müzik dersleri, İngilizce kelime bilgisi ve aile etkinlikleri gibi kapsamlı programlar sunarak ev ve okul arasında işbirliğine dayalı bir öğrenme ortamını teşvik ediyor.",
   },
 ] as EducationModelsType[];
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { EducationModels as EducationModelsConst } from "@/constants";
 import { buttonVariants } from "@/components/ui/button";
+import { TranslateText } from "@/components/TranslateText";
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
 export const EducationModels = () => {
@@ -21,11 +22,14 @@ export const EducationModels = () => {
           atma.className
         )}
       >
-        Education Model
+        <TranslateText
+          englishText="Education Model"
+          turkishText="Eğitim Modeli"
+        />
       </p>
       <div className="bg-[#fdf6ed] rounded-sm p-5 mt-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {educationModelsToDisplay.map((educationModel) => (
-          <div key={educationModel.title} className="">
+          <div key={educationModel.turkishTitle} className="">
             <Image
               src={educationModel.imageUrl}
               alt="educationmodelimage"
@@ -40,20 +44,31 @@ export const EducationModels = () => {
                   atma.className
                 )}
               >
-                {educationModel.title}
+                <TranslateText
+                  englishText={educationModel.englishTitle}
+                  turkishText={educationModel.turkishTitle}
+                />
               </p>{" "}
               <div className="text-[#6b6b84] mt-2.5">
-                {educationModel.description}
+                <TranslateText
+                  englishText={educationModel.englishDescription}
+                  turkishText={educationModel.turkishDescription}
+                />
               </div>
               <div className="flex-1 flex items-end justify-end mt-auto">
                 <Link
-                  href={`/${removeSpacesAndConcatenate(educationModel.title)}`} // Using the function to remove spaces and concatenate words
+                  href={`/${removeSpacesAndConcatenate(
+                    educationModel.englishTitle
+                  )}`} // Using the function to remove spaces and concatenate words
                   className={cn(
                     buttonVariants({ variant: "default" }),
                     "bg-primaryRed hover:bg-[#9d361e] h-full"
                   )}
                 >
-                  View more{" "}
+                  <TranslateText
+                    englishText="View more"
+                    turkishText="Daha fazla görüntüle"
+                  />
                 </Link>
               </div>
             </div>

@@ -84,13 +84,13 @@ export const Footer = () => {
               <div className="flex flex-col gap-2.5 mt-5">
                 {EducationModels.map((educationModel) => (
                   <Link
-                    key={educationModel.title}
+                    key={educationModel.turkishTitle}
                     href={`/${removeSpacesAndConcatenate(
-                      educationModel.title
+                      educationModel.turkishTitle
                     )}`}
                     className="hover:text-primaryRed transition-colors flex items-center gap-2.5"
                   >
-                    <LuDot className="text-xl" /> {educationModel.title}
+                    <LuDot className="text-xl" /> {educationModel.turkishTitle}
                   </Link>
                 ))}
               </div>

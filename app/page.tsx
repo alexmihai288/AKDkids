@@ -8,6 +8,7 @@ import { OurEvents } from "./_components/sections/OurEvents";
 import { Container } from "@/components/Container";
 import { unstable_noStore } from "next/cache";
 import { ChangeLanguage } from "@/components/ChangeLanguage";
+import { TranslateText } from "@/components/TranslateText";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
@@ -35,7 +36,10 @@ export default function Home() {
               atma.className
             )}
           >
-            English is My Second Native Language
+            <TranslateText
+              englishText="English is My Second Native Language"
+              turkishText="İngilizce Benim İkinci Anadilim"
+            />
           </p>
         </Container>
       </div>

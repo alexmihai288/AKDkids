@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { TranslateText } from "@/components/TranslateText";
 export const EducationModelMenu = ({
   whereClause,
 }: {
@@ -29,26 +30,38 @@ export const EducationModelMenu = ({
               } transition-colors hover:bg-inherit`
             )}
           >
-            Education Model
+            <TranslateText
+              englishText="Education Model"
+              turkishText="Eğitim Modeli"
+            />
           </NavigationMenuTrigger>
           <NavigationMenuContent className="py-2.5 flex flex-col font-bold">
             <Link
               href={"/AuthenticEducationModel"}
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
-              Authentic Education Model
+              <TranslateText
+                englishText="Authentic Education Model"
+                turkishText="Otantik Eğitim Modeli"
+              />
             </Link>
             <Link
               href={"/FeaturesOfOurProgram"}
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
-              Features of Our Program
+              <TranslateText
+                englishText="Features of Our Program"
+                turkishText="Programımızın Özellikleri"
+              />
             </Link>
             <Link
               href={"/OurCollaboration"}
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
-              Our Collaboration
+              <TranslateText
+                englishText="Our Collaboration"
+                turkishText="İşbirliğimiz"
+              />
             </Link>
             {/* <Link
               href={"/branches/1"}
@@ -60,19 +73,28 @@ export const EducationModelMenu = ({
               href={"/OurForeignLanguageEducation"}
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
-              Our Foreign Language Education
+              <TranslateText
+                englishText="Our Foreign Language Education"
+                turkishText="Yabancı Dil Eğitimimiz"
+              />
             </Link>
             <Link
               href={"/EuropeanLanguagePortfolio"}
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
-              European Language Portfolio
+              <TranslateText
+                englishText="European Language Portfolio"
+                turkishText="Avrupa Dil Portföyü"
+              />
             </Link>
             <Link
               href={"/OurFamilyNewsletter"}
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
-              Our Family Newsletter
+              <TranslateText
+                englishText="Our Family Newsletter"
+                turkishText="Aile Bültenimiz"
+              />
             </Link>
           </NavigationMenuContent>
         </NavigationMenuItem>
