@@ -24,18 +24,18 @@ export const OurSchools = () => {
       </p>
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10 mt-10">
         {" "}
-        <div className="p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 transition-transform ">
+        <div className="min-h-[500px] p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 transition-transform">
           <h1 className="font-bold text-2xl">Mareşal AKD kids</h1>
           <div className="flex items-center gap-2.5 mt-2.5">
             <MdLocationPin className="text-primaryRed" />
             <p>Mareşal Fevzi Çakmak Mah. 447 Sk. No:17 - Merkez/AFYON</p>
           </div>
           <Image
-            src="/Maresal.png"
+            src="/maresal.jpg"
             width={500}
             height={500}
             alt="school-image"
-            className="rounded-sm mt-5 w-full max-h-[200px] object-cover"
+            className="rounded-sm mt-5 w-full max-h-[400px] md:max-h-[200px] object-cover"
           />
           <Link
             href="/branches/1"
@@ -50,18 +50,18 @@ export const OurSchools = () => {
             />{" "}
           </Link>
         </div>
-        <div className="p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 transition-transform">
+        <div className="min-h-[500px] p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 transition-transform">
           <h1 className="font-bold text-2xl">Uydukent AKD kids</h1>
           <div className="flex items-center gap-2.5 mt-2.5">
             <MdLocationPin className="text-primaryRed" />
             <p>Erkmen Cumhuriyet Mah. Fidankent St. No:3 Erkmen/AFYON</p>
           </div>
           <Image
-            src="/Uydukent.png"
+            src="/uydukent.jpg"
             width={500}
             height={500}
             alt="school-image"
-            className="rounded-sm mt-5 w-full max-h-[200px] object-cover"
+            className="rounded-sm mt-5 w-full max-h-[500px] md:max-h-[200px] object-cover"
           />
           <Link
             href="/branches/2"
@@ -76,7 +76,7 @@ export const OurSchools = () => {
             />{" "}
           </Link>
         </div>
-        <div className="p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 md:scale-105 md:hover:scale-110 transition-transform">
+        <div className="min-h-[500px] p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 transition-transform">
           <h1 className="font-bold text-2xl">Triovista AKD kids</h1>
           <div className="flex items-center gap-2.5 mt-2.5">
             <MdLocationPin className="text-primaryRed" />
@@ -89,7 +89,7 @@ export const OurSchools = () => {
             width={500}
             height={500}
             alt="school-image"
-            className="rounded-sm mt-5 w-full max-h-[200px] object-cover"
+            className="rounded-sm mt-5 w-full max-h-[400px] md:max-h-[240px] object-cover"
           />
           <Link
             href="/branches/3"
