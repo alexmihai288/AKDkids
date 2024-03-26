@@ -9,6 +9,7 @@ import { IoIosMail } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";
 import { LuDot } from "react-icons/lu";
 import { EducationModels } from "@/constants";
+import { TranslateText } from "./TranslateText";
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
 export const Footer = () => {
@@ -24,8 +25,12 @@ export const Footer = () => {
             <div className="self-start">
               <h1 className={cn(atma.className, "text-4xl")}>AKD KIDS</h1>
               <p className="my-5 max-w-sm">
-                It is Turkey&apos;s largest chain of pre-school education
-                institutions.
+                <TranslateText
+                  englishText="It is Turkey's largest chain of pre-school education
+                institutions."
+                  turkishText="Türkiye'nin en büyük okul öncesi eğitim zinciridir.
+                  kurumlar."
+                />
               </p>
               <div className="flex items-center gap-5">
                 <Link
@@ -51,12 +56,19 @@ export const Footer = () => {
                   "border-b-2 border-b-primaryRed w-1/2 whitespace-nowrap"
                 )}
               >
+                <TranslateText
+                  englishText="
                 Contact Us
+                "
+                  turkishText="Bize Ulaşın"
+                />
               </h1>
               <div className="flex items-center gap-2.5 mt-5">
                 <FaPhoneAlt className="text-sm text-primaryRed self-start" />
                 <Link href="tel:0850 80 80 453" className="">
-                  <p className="text-lg">Phone</p>
+                  <p className="text-lg">
+                    <TranslateText englishText="Phone" turkishText="Telefon" />
+                  </p>
                   <p className="text-sm">0850 80 80 453</p>
                 </Link>
               </div>
@@ -79,7 +91,10 @@ export const Footer = () => {
                   "border-b-2 border-b-primaryRed w-1/2 whitespace-nowrap"
                 )}
               >
-                Quick Menu
+                <TranslateText
+                  englishText="Quick Menu"
+                  turkishText="Hızlı Menü"
+                />
               </h1>
               <div className="flex flex-col gap-2.5 mt-5">
                 {EducationModels.map((educationModel) => (
@@ -90,7 +105,11 @@ export const Footer = () => {
                     )}`}
                     className="hover:text-primaryRed transition-colors flex items-center gap-2.5"
                   >
-                    <LuDot className="text-xl" /> {educationModel.turkishTitle}
+                    <LuDot className="text-xl" />{" "}
+                    <TranslateText
+                      englishText={educationModel.englishTitle}
+                      turkishText={educationModel.turkishTitle}
+                    />
                   </Link>
                 ))}
               </div>
@@ -103,7 +122,7 @@ export const Footer = () => {
                   "border-b-2 border-b-primaryRed w-1/2 whitespace-nowrap"
                 )}
               >
-                Branches
+                <TranslateText englishText="Branches" turkishText="Şubeler" />
               </h1>
               <div className="flex flex-col gap-2.5 mt-5">
                 <Link
