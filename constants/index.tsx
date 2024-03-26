@@ -140,53 +140,9 @@ export const EducationModels = [
   },
   {
     imageUrl:
-      "https://utfs.io/f/a0394c4a-6b39-4093-84e5-e3bbfa21c6a5-705kdz.jpg",
-    englishTitle: " Our Events",
-    turkishTitle: "Etkinliklerimiz",
-    englishChildren: (
-      <p>
-        The European Language Portfolio (ELP), in essence, is a personal file
-        where individuals can follow their language learning processes and
-        evaluate themselves. ELP is registered in the name of selected
-        institution with the approval of the Council of Europe. The active ELP
-        we use in our institutions is registered in the European Council
-        database with the number 2012.R0006 on behalf of American Culture.
-        American Culture is the only organization in Turkey that has a portfolio
-        approved by the Council of Europe. American Culture is an institution
-        that has established the principles of the European Language Portfolio
-        in its courses and pre-school education institutions since 2004 and has
-        been able to integrate it into its foreign language education.
-        Accordingly, teachers guide our children during and after the initiation
-        and evaluation of the European Language Portfolio.
-      </p>
-    ),
-    turkishChildren: (
-      <p>
-        Avrupa Dil Portföyü (ELP), özünde kişisel bir dosyadır bireylerin dil
-        öğrenme süreçlerini takip edebilecekleri ve kendilerini
-        değerlendirebilirler. ELP seçilen kişiler adına kayıtlıdır Avrupa
-        Konseyi`&apos;`nin onayı ile kurulmuştur. Aktif ELP kurumlarımızda
-        kullandığımız Avrupa Konseyi tarafından tescil edilmiştir. veritabanına
-        Amerikan Kültür adına 2012.R0006 numarası ile kaydedilmiştir. Amerikan
-        Kültür, Türkiye`&apos;`de portföyü olan tek kuruluştur Avrupa Konseyi
-        tarafından onaylanmıştır. Amerikan Kültürü bir kurumdur Avrupa Dil
-        Portföyü`&apos;`nün ilkelerini belirleyen kurslarında ve okul öncesi
-        eğitim kurumlarında 2004 yılından bu yana yabancı dil eğitimine entegre
-        edebilmiştir. Bu doğrultuda, öğretmenler çocuklarımıza başlangıç
-        sırasında ve sonrasında rehberlik etmektedir. ve Avrupa Dil
-        Portfolyosunun değerlendirilmesi.
-      </p>
-    ),
-    englishDescription:
-      "The European Language Portfolio (ELP) serves as a personal language tracking tool, enabling individuals to monitor their language learning journey and self-assess. Registered under selected institutions with Council of Europe endorsement, our active ELP, registered as 2012.R0006, through American Culture, stands as Turkey's sole Council-approved portfolio. Since 2004, American Culture has embedded ELP principles into its language education, guiding students through portfolio initiation and evaluation.",
-    turkishDescription:
-      "Avrupa Dil Portfolyosu (ELP), bireylerin dil öğrenme yolculuklarını takip etmelerini ve kendi kendilerini değerlendirmelerini sağlayan kişisel bir dil izleme aracı olarak hizmet vermektedir. Seçilmiş Avrupa Konseyi onaylı kurumlarda kayıtlı olan ve 2012.R0006 numarasıyla Amerikan Kültür aracılığıyla aktif olan ELP, Türkiye'de Konsey onaylı tek portfolyodur. Amerikan Kültür, 2004 yılından bu yana ELP ilkelerini dil eğitimine dahil ederek öğrencilere portfolyo oluşturma ve değerlendirme konusunda rehberlik etmektedir.",
-  },
-  {
-    imageUrl:
       "https://utfs.io/f/02a902b3-e486-4a27-b193-3bdbdf7108ed-705kdw.jpg",
     englishTitle: "Our Foreign Language Education",
-    turkishTitle: "Yabancı Dil Eğitimimiz",
+    turkishTitle: "Çift Dil, Çift Öğretmen",
     englishChildren: (
       <p>
         The European Language Portfolio (ELP), in essence, is a personal file
@@ -265,7 +221,7 @@ export const EducationModels = [
     imageUrl:
       "https://utfs.io/f/11f0f29e-8e6d-4c38-aa3a-cf3bcffed192-705kdu.jpg",
     englishTitle: "Our Family Newsletter",
-    turkishTitle: "Aile Bültenimiz",
+    turkishTitle: "Aile Katılımı",
     engllishChildren: (
       <p>
         We cannot think of children independent of family education on this path

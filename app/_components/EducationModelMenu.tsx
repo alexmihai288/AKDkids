@@ -34,7 +34,7 @@ export const EducationModelMenu = ({
           >
             <TranslateText
               englishText="Education Model"
-              turkishText="Eğitim Modeli"
+              turkishText="Eğitim Modelimiz"
             />
           </NavigationMenuTrigger>
           <NavigationMenuContent className="py-2.5 flex flex-col font-bold">
@@ -47,7 +47,7 @@ export const EducationModelMenu = ({
             >
               <TranslateText
                 englishText="Authentic Education Model"
-                turkishText="Otantik Eğitim Modeli"
+                turkishText="Özgün Eğitim"
               />
             </Link>
             <Link
@@ -68,7 +68,7 @@ export const EducationModelMenu = ({
             >
               <TranslateText
                 englishText="Our Collaboration"
-                turkishText="İşbirliğimiz"
+                turkishText="Ortak Çalışmalarımız"
               />
             </Link>
             <Link
