@@ -11,7 +11,9 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { TranslateText } from "@/components/TranslateText";
+import { usePathname } from "next/navigation";
 export const BranchesMenu = ({ whereClause }: { whereClause?: string }) => {
+  const pathname = usePathname();
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -36,19 +38,28 @@ export const BranchesMenu = ({ whereClause }: { whereClause?: string }) => {
           <NavigationMenuContent className="py-2.5 flex flex-col font-bold">
             <Link
               href="/branches/1"
-              className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
+              className={cn(
+                "text-nowrap p-2.5 hover:text-primaryRed transition-colors",
+                pathname === "/branches/1" && "text-primaryRed"
+              )}
             >
               Mareşal AKD kids
             </Link>
             <Link
               href="/branches/2"
-              className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
+              className={cn(
+                "text-nowrap p-2.5 hover:text-primaryRed transition-colors",
+                pathname === "/branches/2" && "text-primaryRed"
+              )}
             >
               Uydukent AKD kids
             </Link>
             <Link
               href="/branches/3"
-              className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
+              className={cn(
+                "text-nowrap p-2.5 hover:text-primaryRed transition-colors",
+                pathname === "/branches/3" && "text-primaryRed"
+              )}
             >
               Triovista AKD kids
             </Link>
