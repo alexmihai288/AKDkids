@@ -24,7 +24,7 @@ export const OurSchools = () => {
       </p>
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10 mt-10">
         {" "}
-        <div className="p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 transition-transform">
+        <div className="p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 transition-transform ">
           <h1 className="font-bold text-2xl">Mareşal AKD kids</h1>
           <div className="flex items-center gap-2.5 mt-2.5">
             <MdLocationPin className="text-primaryRed" />
@@ -54,7 +54,7 @@ export const OurSchools = () => {
           <h1 className="font-bold text-2xl">Uydukent AKD kids</h1>
           <div className="flex items-center gap-2.5 mt-2.5">
             <MdLocationPin className="text-primaryRed" />
-            <p>Mareşal Fevzi Çakmak Mah. 447 Sk. No:17 - Merkez/AFYON</p>
+            <p>Erkmen Cumhuriyet Mah. Fidankent St. No:3 Erkmen/AFYON</p>
           </div>
           <Image
             src="/school-logo.jpg"
@@ -64,7 +64,7 @@ export const OurSchools = () => {
             className="rounded-sm mt-5 w-full"
           />
           <Link
-            href="/branches/1"
+            href="/branches/2"
             className={cn(
               buttonVariants({ variant: "default" }),
               "bg-[#23cc88] hover:bg-[#157f54] mt-10"
@@ -76,11 +76,13 @@ export const OurSchools = () => {
             />{" "}
           </Link>
         </div>
-        <div className="p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 transition-transform">
-          <h1 className="font-bold text-2xl">Erhmen AKD kids</h1>
+        <div className="p-5 rounded-md shadow-lg bg-[#f1e7ff] hover:scale-105 md:scale-105 md:hover:scale-110 transition-transform">
+          <h1 className="font-bold text-2xl">Triovista AKD kids</h1>
           <div className="flex items-center gap-2.5 mt-2.5">
             <MdLocationPin className="text-primaryRed" />
-            <p>Mareşal Fevzi Çakmak Mah. 447 Sk. No:17 - Merkez/AFYON</p>
+            <p className="max-w-xs">
+              Triovista Mansions, 2nd Stage - Center/AFYON
+            </p>
           </div>
           <Image
             src="/school-logo.jpg"
@@ -90,7 +92,7 @@ export const OurSchools = () => {
             className="rounded-sm mt-5 w-full"
           />
           <Link
-            href="/branches/1"
+            href="/branches/3"
             className={cn(
               buttonVariants({ variant: "default" }),
               "bg-[#23cc88] hover:bg-[#157f54] mt-10"
@@ -99,7 +101,7 @@ export const OurSchools = () => {
             <TranslateText
               englishText="View more"
               turkishText="Daha fazla görüntüle"
-            />
+            />{" "}
           </Link>
         </div>
       </div>
