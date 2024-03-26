@@ -28,7 +28,7 @@ export const Gallery = ({
           {name} Gallery
         </p>
       </Container>
-      <div className={cn("rounded-sm p-5 mt-10", `bg-[${color}]`)}>
+      <div className={cn("rounded-sm p-5 mt-10", color && `bg-[${color}]`)}>
         <Container>
           <ScrollArea className="h-[600px] px-5 pt-5">
             <div className="mt-6 grid grid-cols-1 items-center justify-center sm:grid-cols-2 md:grid-cols-4 gap-10">
