@@ -9,13 +9,27 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { BsTelephoneOutboundFill } from "react-icons/bs";
 import { MdLocationPin } from "react-icons/md";
 import { BsChatRightTextFill } from "react-icons/bs";
-import { EducationModelnfo, EducationModels } from "@/constants";
+import {
+  EducationModelnfo,
+  EducationModels,
+  MareşalGalleryImages,
+  TriovistaGalleryImages,
+  UydukentGalleryImages,
+} from "@/constants";
 import { Gallery } from "@/app/_components/sections/Gallery";
 import { TranslateText } from "@/components/TranslateText";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
 const page = ({ params }: { params: { branchName: string } }) => {
+  let branchImages;
+  if (params.branchName === "1")
+    branchImages = MareşalGalleryImages.flatMap((img) => img);
+  else if (params.branchName === "2")
+    branchImages = UydukentGalleryImages.flatMap((img) => img);
+  else branchImages = TriovistaGalleryImages.flatMap((img) => img);
+
+  
   const branch = EducationModelnfo[Number(params.branchName) - 1];
 
   return (
@@ -111,6 +125,7 @@ const page = ({ params }: { params: { branchName: string } }) => {
             ? "#2194d2"
             : "#f1e7ff"
         }
+        images={branchImages!}
       />
       <Container>
         <div className="mt-20 flex flex-col gap-20 lg:gap-0 lg:flex-row lg:justify-between">

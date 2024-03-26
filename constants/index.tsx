@@ -351,4 +351,78 @@ export const MainGalleryImages = [
   },
 ] as GalleryImagesType[];
 
-export const MareşalGalleryImages = [] as GalleryImagesType[];
+export const MareşalGalleryImages = [
+  {
+    imageUrl: "https://utfs.io/f/1cd04b55-6be3-4cb9-bd28-87dd480890d3-2nc.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/95a51a4f-94f7-4b93-bba2-dc2b0a955090-2n9.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/f12ac433-32b1-4021-95cd-a4ddda5b93d0-2na.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/afb76bc9-780e-4164-8d5f-eec4ffb1e849-2nb.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/6cde3870-c559-4d77-8557-28dd1bbdd5d1-2n8.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/1cd04b55-6be3-4cb9-bd28-87dd480890d3-2nc.jpg",
+  },
+] as GalleryImagesType[];
+
+export const UydukentGalleryImages = [
+  {
+    imageUrl: "https://utfs.io/f/a2e76db6-e83a-444d-8d09-f6334ce3e621-39.8.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/8ec2f873-2f0c-4d88-968b-c656e98e9857-2u5.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/a3eb2af0-467e-4656-99e0-ec32c916dc10-2u6.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/2b677040-8e49-402e-be31-7815d64d0fc6-2u7.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/98ffa516-5128-41a7-9bab-0a4171b58ef4-2u8.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/45900416-fdad-4fbf-a074-75c9e0a29857-2u9.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/9c7eb15a-d8de-4e2f-a5dd-ffe986c0007f-2ua.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/a546d7a9-a637-44f7-a985-aebfd6e0bff1-2u4.jpg",
+  },
+] as GalleryImagesType[];
+
+export const TriovistaGalleryImages = [
+  {
+    imageUrl: "https://utfs.io/f/b2c75194-5d86-4b59-b090-6caf7f32674e-2t9.jpg",
+  },
+  {
+    imageUrl:
+      "https://utfs.io/f/c6c774ed-1532-4f23-9450-afd982e84b8c-1sqbj7.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/bbe2724c-d952-4f65-a9be-b5fe29fea291-2tb.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/c817426b-2048-4d8f-a223-25fc066d3ec7-2tc.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/135e2806-a944-4411-8226-ffb86003df71-2td.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/dd92aa75-844a-4ab3-97b7-726089aee2f7-2te.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/ec9e1cc3-d9b4-4379-a184-d57c514800f0-2tf.jpg",
+  },
+  {
+    imageUrl: "https://utfs.io/f/14334799-6ebd-4e60-af11-f06b514af982-2tg.jpg",
+  },
+] as GalleryImagesType[];
