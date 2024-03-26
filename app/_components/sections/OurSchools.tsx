@@ -31,11 +31,11 @@ export const OurSchools = () => {
             <p>Mareşal Fevzi Çakmak Mah. 447 Sk. No:17 - Merkez/AFYON</p>
           </div>
           <Image
-            src="/school-logo.jpg"
+            src="/Maresal.png"
             width={500}
             height={500}
             alt="school-image"
-            className="rounded-sm mt-5 w-full"
+            className="rounded-sm mt-5 w-full max-h-[200px] object-cover"
           />
           <Link
             href="/branches/1"
@@ -57,11 +57,11 @@ export const OurSchools = () => {
             <p>Erkmen Cumhuriyet Mah. Fidankent St. No:3 Erkmen/AFYON</p>
           </div>
           <Image
-            src="/school-logo.jpg"
+            src="/Uydukent.png"
             width={500}
             height={500}
             alt="school-image"
-            className="rounded-sm mt-5 w-full"
+            className="rounded-sm mt-5 w-full max-h-[200px] object-cover"
           />
           <Link
             href="/branches/2"
@@ -85,11 +85,11 @@ export const OurSchools = () => {
             </p>
           </div>
           <Image
-            src="/school-logo.jpg"
+            src="/trivista.jpg"
             width={500}
             height={500}
             alt="school-image"
-            className="rounded-sm mt-5 w-full"
+            className="rounded-sm mt-5 w-full max-h-[200px] object-cover"
           />
           <Link
             href="/branches/3"
