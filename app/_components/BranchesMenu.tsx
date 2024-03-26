@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { TranslateText } from "@/components/TranslateText";
 export const BranchesMenu = ({ whereClause }: { whereClause?: string }) => {
   return (
     <NavigationMenu>
@@ -25,7 +26,12 @@ export const BranchesMenu = ({ whereClause }: { whereClause?: string }) => {
               } transition-colors hover:bg-inherit`
             )}
           >
+            <TranslateText
+              englishText="
             Branches
+            "
+              turkishText="Şubeler"
+            />
           </NavigationMenuTrigger>
           <NavigationMenuContent className="py-2.5 flex flex-col font-bold">
             <Link

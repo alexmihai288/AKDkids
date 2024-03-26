@@ -11,6 +11,7 @@ import { MdLocationPin } from "react-icons/md";
 import { BsChatRightTextFill } from "react-icons/bs";
 import { EducationModelnfo, EducationModels } from "@/constants";
 import { Gallery } from "@/app/_components/sections/Gallery";
+import { TranslateText } from "@/components/TranslateText";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
@@ -23,7 +24,9 @@ const page = ({ params }: { params: { branchName: string } }) => {
         <div className="flex items-center justify-center gap-5 mt-20">
           <IoIosPin className="text-6xl text-primaryRed" />
           <div>
-            <p className="text-4xl text-[#70747f]">Address</p>
+            <p className="text-4xl text-[#70747f]">
+              <TranslateText englishText="Address" turkishText="Adres" />
+            </p>
             <p className="text-xl text-[#1b0238] font-bold mt-2.5">
               {branch.location}
             </p>
@@ -37,7 +40,12 @@ const page = ({ params }: { params: { branchName: string } }) => {
                 atma.className
               )}
             >
+              <TranslateText
+                englishText="
               My English
+              "
+                turkishText="Benim İngilizcem"
+              />
             </p>{" "}
             <p
               className={cn(
@@ -45,7 +53,12 @@ const page = ({ params }: { params: { branchName: string } }) => {
                 atma.className
               )}
             >
+              <TranslateText
+                englishText="
               My Second Native English
+              "
+                turkishText="İkinci Anadilim İngilizce"
+              />
             </p>
             <div
               className={cn(
@@ -104,15 +117,30 @@ const page = ({ params }: { params: { branchName: string } }) => {
           <div className="space-y-20 mx-auto lg:mx-0">
             <div className={cn(atma.className, "flex items-center gap-5")}>
               <FaCheckCircle className="text-[#fc477e] text-2xl" />
-              <p>European Language Portfolio</p>
+              <p>
+                <TranslateText
+                  englishText="European Language Portfolio"
+                  turkishText="Avrupa Dil Portföyü"
+                />
+              </p>
             </div>
             <div className={cn(atma.className, "flex items-center gap-5")}>
               <FaCheckCircle className="text-[#b250fe] text-2xl" />
-              <p>Individual Program</p>
+              <p>
+                <TranslateText
+                  englishText="Individual Program"
+                  turkishText="Bireysel Program"
+                />
+              </p>
             </div>
             <div className={cn(atma.className, "flex items-center gap-5")}>
               <FaCheckCircle className="text-[#1ab9ff] text-2xl" />
-              <p>Enriched Academic Enviroment</p>
+              <p>
+                <TranslateText
+                  englishText="Enriched Academic Enviroment"
+                  turkishText="Zenginleştirilmiş Akademik Ortam"
+                />
+              </p>
             </div>
           </div>
           <Image
@@ -142,7 +170,12 @@ const page = ({ params }: { params: { branchName: string } }) => {
               <div className="flex gap-5 self-start">
                 <BsTelephoneOutboundFill className="text-6xl text-[#de769f]" />
                 <div className="">
-                  <p className={cn(atma.className, "text-2xl")}>Telephone</p>
+                  <p className={cn(atma.className, "text-2xl")}>
+                    <TranslateText
+                      englishText="Telephone"
+                      turkishText="Telefon"
+                    />
+                  </p>
                   <p className="text-[#70747f] text-xl">{branch.phoneNumber}</p>
                 </div>
               </div>
@@ -151,7 +184,9 @@ const page = ({ params }: { params: { branchName: string } }) => {
               <div className="flex gap-5 self-start">
                 <MdLocationPin className="text-6xl text-[#ffb518]" />
                 <div className="">
-                  <p className={cn(atma.className, "text-2xl")}>Address</p>
+                  <p className={cn(atma.className, "text-2xl")}>
+                    <TranslateText englishText="Address" turkishText="Adres" />
+                  </p>
                   <p className="text-[#70747f] text-xl max-w-[150px]">
                     {branch.location}
                   </p>
