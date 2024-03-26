@@ -7,13 +7,14 @@ import { Gallery } from "./_components/sections/Gallery";
 import { OurEvents } from "./_components/sections/OurEvents";
 import { Container } from "@/components/Container";
 import { unstable_noStore } from "next/cache";
-import { ChangeLanguage } from "@/components/ChangeLanguage";
 import { TranslateText } from "@/components/TranslateText";
+import { MainGalleryImages } from "@/constants";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
 export default function Home() {
   unstable_noStore();
+  const mainImages = MainGalleryImages.flatMap((img) => img);
   return (
     <main className="relative z-20">
       <video
@@ -66,7 +67,7 @@ export default function Home() {
       <Container>
         <OurEvents />
       </Container>
-      <Gallery color="#f1e7ff" />
+      <Gallery color="#f1e7ff" images={mainImages} />
     </main>
   );
 }

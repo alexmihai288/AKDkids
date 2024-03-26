@@ -1,22 +1,21 @@
 import { Container } from "@/components/Container";
-import { Button, buttonVariants } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { GalleryImages } from "@/constants";
+import { GalleryImagesType } from "@/constants";
 import { cn } from "@/lib/utils";
 import { Atma } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
-
-interface GalleryProps {
+export const Gallery = ({
+  name,
+  color,
+  images,
+}: {
   name?: string;
   color?: string;
-}
-
-export const Gallery = ({ name, color }: { name?: string; color?: string }) => {
-  console.log(color);
+  images: GalleryImagesType[];
+}) => {
   return (
     <>
       <Container>
@@ -29,11 +28,11 @@ export const Gallery = ({ name, color }: { name?: string; color?: string }) => {
           {name} Gallery
         </p>
       </Container>
-      <div className={cn(`bg-[${color}] rounded-sm p-5 mt-10`)}>
+      <div className={cn("rounded-sm p-5 mt-10", `bg-[${color}]`)}>
         <Container>
           <ScrollArea className="h-[600px] px-5 pt-5">
             <div className="mt-6 grid grid-cols-1 items-center justify-center sm:grid-cols-2 md:grid-cols-4 gap-10">
-              {GalleryImages.map((galleryImage) => (
+              {images?.map((galleryImage) => (
                 <Image
                   loading="lazy"
                   src={galleryImage.imageUrl}
