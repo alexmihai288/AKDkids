@@ -11,11 +11,13 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { TranslateText } from "@/components/TranslateText";
+import { usePathname } from "next/navigation";
 export const EducationModelMenu = ({
   whereClause,
 }: {
   whereClause?: string;
 }) => {
+  const pathname = usePathname();
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -38,7 +40,10 @@ export const EducationModelMenu = ({
           <NavigationMenuContent className="py-2.5 flex flex-col font-bold">
             <Link
               href={"/AuthenticEducationModel"}
-              className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
+              className={cn(
+                "text-nowrap p-2.5 hover:text-primaryRed transition-colors",
+                pathname === "/AuthenticEducationModel" && "text-primaryRed"
+              )}
             >
               <TranslateText
                 englishText="Authentic Education Model"
@@ -56,22 +61,22 @@ export const EducationModelMenu = ({
             </Link>
             <Link
               href={"/OurCollaboration"}
-              className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
+              className={cn(
+                "text-nowrap p-2.5 hover:text-primaryRed transition-colors",
+                pathname === "/OurCollaboration" && "text-primaryRed"
+              )}
             >
               <TranslateText
                 englishText="Our Collaboration"
                 turkishText="İşbirliğimiz"
               />
             </Link>
-            {/* <Link
-              href={"/branches/1"}
-              className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
-            >
-              Our Events
-            </Link> */}
             <Link
               href={"/OurForeignLanguageEducation"}
-              className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
+              className={cn(
+                "text-nowrap p-2.5 hover:text-primaryRed transition-colors",
+                pathname === "/OurForeignLanguageEducation" && "text-primaryRed"
+              )}
             >
               <TranslateText
                 englishText="Our Foreign Language Education"
@@ -80,7 +85,10 @@ export const EducationModelMenu = ({
             </Link>
             <Link
               href={"/EuropeanLanguagePortfolio"}
-              className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
+              className={cn(
+                "text-nowrap p-2.5 hover:text-primaryRed transition-colors",
+                pathname === "/EuropeanLanguagePortfolio" && "text-primaryRed"
+              )}
             >
               <TranslateText
                 englishText="European Language Portfolio"
@@ -89,7 +97,10 @@ export const EducationModelMenu = ({
             </Link>
             <Link
               href={"/OurFamilyNewsletter"}
-              className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
+              className={cn(
+                "text-nowrap p-2.5 hover:text-primaryRed transition-colors",
+                pathname === "/OurFamilyNewsletter" && "text-primaryRed"
+              )}
             >
               <TranslateText
                 englishText="Our Family Newsletter"
