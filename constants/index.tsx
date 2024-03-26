@@ -368,7 +368,7 @@ export const MareşalGalleryImages = [
     imageUrl: "https://utfs.io/f/6cde3870-c559-4d77-8557-28dd1bbdd5d1-2n8.jpg",
   },
   {
-    imageUrl: "https://utfs.io/f/1cd04b55-6be3-4cb9-bd28-87dd480890d3-2nc.jpg",
+    imageUrl: "https://utfs.io/f/0992188f-fd3d-4770-b8b8-c4b697f94131-2nd.jpg",
   },
 ] as GalleryImagesType[];
 

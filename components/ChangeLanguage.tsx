@@ -14,7 +14,7 @@ export const ChangeLanguage = () => {
     <div className="bg-[#f7f5f2] p-5">
       <Container>
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-10">
             <div className="flex items-center gap-2.5">
               <FaPhoneAlt className="text-sm text-primaryRed self-start" />
               <p>
@@ -27,7 +27,7 @@ export const ChangeLanguage = () => {
               <span>info@akdkids.com</span>
             </div>
           </div>
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-10 justify-between md:justify-normal flex-1 md:flex-none">
             <div
               onClick={() => setLanguage("english")}
               className={cn(
