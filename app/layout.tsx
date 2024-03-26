@@ -18,14 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <link
           rel="icon"
           href="/logo1.png?<generated>"
           type="image/<generated>"
           sizes="<generated>"
         />
-      </head>
+      </head> */}
       <body className={roboto.className}>
         <ChangeLanguage />
         {children}
