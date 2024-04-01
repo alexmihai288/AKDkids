@@ -101,7 +101,7 @@ export const Footer = () => {
                   <Link
                     key={educationModel.turkishTitle}
                     href={`/${removeSpacesAndConcatenate(
-                      educationModel.turkishTitle
+                      educationModel.englishTitle
                     )}`}
                     className="hover:text-primaryRed transition-colors flex items-center gap-2.5"
                   >
