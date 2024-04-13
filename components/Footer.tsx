@@ -13,6 +13,8 @@ import { TranslateText } from "./TranslateText";
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
 export const Footer = () => {
+
+  //to be added in lib
   const removeSpacesAndConcatenate = (str: string) => {
     return str.replace(/\s+/g, "");
   };
